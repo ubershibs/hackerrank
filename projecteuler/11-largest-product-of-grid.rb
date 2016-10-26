@@ -4,6 +4,7 @@ blank_row = %w(0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0)
 
 grid = Array.new(20)
 for grid_i in (0..20-1)
+  grid_t = gets.strip
   grid[grid_i] = grid_t.split(' ').map(&:to_i)
   grid[grid_i] << 0
   grid[grid_i] << 0
